@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile - Travel Genius</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: pink;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+    
+    .profile-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .profile-image {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+    
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff718d;
+      margin-bottom: 10px;
+    }
+    
+    .profile-bio {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+    
+    .profile-info {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .profile-info strong {
+      font-weight: bold;
+      color: #ff718d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-header">
+      <img class="profile-image" src="profile-picture.jpg" alt="Profile Picture">
+      <h1 class="profile-name">Noumeir</h1>
+      <p class="profile-bio">Travel enthusiast | Beach lover | Adventure seeker</p>
+    </div>
+    <div class="profile-details">
+      <h2>Profile Details</h2>
+      <ul>
+        <li class="profile-info"><strong>Username:</strong> Noumeir</li>
+        <li class="profile-info"><strong>Email:</strong> Noumeir.morales@gmail.com</li>
+        <li class="profile-info"><strong>Location:</strong> Ny, Ny</li>
+        <button id="logoutBtn">Logout</button>
+        <script>
+          // Attach the event listener to the logout button
+          document.getElementById("logoutBtn").addEventListener("click",function() {
+            //
+            window.location.href = "login.html";
+          });
+        </script>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
